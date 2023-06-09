@@ -1,0 +1,54 @@
+#
+# fergyCommandBlocker by fergydanny (https://fergydanny.com)
+#
+# Discord: https://fergydanny.com/discord
+#
+
+# Do you want to also prevent tab completion of blocked commands?
+hide-blocked-commands-from-tab: true
+
+# Anyone with this permission can bypass all the restrictions except console-only
+bypass-permission: "fergycmdblocker.bypass"
+
+# Checks if the command is exactly the below. Can contain spaces to match specific commands with arguments.
+commands:
+  - "/a"
+  - "/about"
+  - "/icanhasbukkit"
+  - "/ver"
+  - "/version"
+  - "/?"
+  - "/plugman list"
+  - "/hd"
+  - "/chatcontrol"
+  - "/chc"
+  - "/pex"
+  - "//calc"
+  - "/lp"
+  - "/pl"
+
+# Checks if these are found at the start of the command. Don't put slashes (/) in here.
+# An example of how this works is "bukkit:" will prevent /bukkit:<anything>
+contains:
+  - "bukkit:"
+  - "minecraft:"
+  - "spigot:"
+  - "essentials:"
+  - "multiverse-core:"
+  - "ess:"
+  - "luckperms:"
+  - "fastasyncworldedit:"
+
+# Commands that can only be run in console. Cannot be bypassed at all.
+console-only:
+  - "/op"
+  - "/deop"
+  - "/reload"
+  - "/featherboard resetconfig"
+
+# Set a message to "" to not send anything. You can use hex codes by using #ffffff like format or regular
+# color codes like &a
+messages:
+  commands: "&cYou are not allowed to use {cmd}." # commands has a {cmd} placeholder that will output the blocked command.
+  contains: "&cYou are not allowed to use commands that include {match}." # contains has a {match} placeholder that will output the blocked part of the command.
+  console-only: "&cYou are not allowed to use this command"

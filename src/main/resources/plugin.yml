@@ -1,0 +1,6 @@
+name: fergyCommandBlocker
+version: ${project.version}
+main: com.fergydanny.fergycommandblocker.FergyCommandBlocker
+author: "fergydanny"
+website: "fergydanny.com"
+api-version: 1.19
