@@ -24,6 +24,7 @@ commands:
   - "/chc"
   - "/pex"
   - "//calc"
+  - "//calculate"
   - "/lp"
   - "/pl"
 
